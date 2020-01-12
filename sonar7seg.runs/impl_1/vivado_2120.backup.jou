@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Tue Dec  4 15:30:56 2018
+# Process ID: 2120
+# Current directory: D:/fpga/xilinix18/projects/sonar7seg/sonar7seg.runs/impl_1
+# Command line: vivado.exe -log uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart.tcl -notrace
+# Log file: D:/fpga/xilinix18/projects/sonar7seg/sonar7seg.runs/impl_1/uart.vdi
+# Journal file: D:/fpga/xilinix18/projects/sonar7seg/sonar7seg.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart.tcl -notrace

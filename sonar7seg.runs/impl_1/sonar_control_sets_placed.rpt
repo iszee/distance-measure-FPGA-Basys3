@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Tue Dec  4 16:06:42 2018
+| Host         : MadzBeast running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sonar_control_sets_placed.rpt
+| Design       : sonar
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               2 |            1 |
+| Yes          | No                    | No                     |              16 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              84 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+--------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal        |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+-----------------------------+--------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                             | p_0_in             |                1 |              2 |
+|  clk_IBUF_BUFG | sonar_trig_i_2_n_0          | sonar_trig_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG | centimeters_tens[3]_i_1_n_0 | count[16]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG | output_ones                 |                    |                2 |             16 |
+|  clk_IBUF_BUFG | count[16]_i_2_n_0           | count[16]_i_1_n_0  |                6 |             34 |
+|  clk_IBUF_BUFG | centimeters_ones[3]_i_1_n_0 | count[16]_i_1_n_0  |                5 |             40 |
+|  clk_IBUF_BUFG |                             |                    |                9 |             50 |
++----------------+-----------------------------+--------------------+------------------+----------------+
+
+
